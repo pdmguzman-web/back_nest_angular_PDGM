@@ -73,7 +73,6 @@ __decorate([
     __metadata("design:returntype", void 0)
 ], UsersController.prototype, "remove", null);
 UsersController = __decorate([
-    UseGuards(JwtAuthGuard),
     Controller('users'),
     __metadata("design:paramtypes", [UsersService])
 ], UsersController);
