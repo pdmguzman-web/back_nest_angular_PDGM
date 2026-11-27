@@ -12,6 +12,8 @@ import { AuthModule } from './modules/auth/auth.module.js';
 import { UsersModule } from './modules/users/users.module.js';
 import { DatabaseModule } from './database/database.module.js';
 import { ConfigModule } from './config/config.module.js';
+import { CategoriaModule } from './modules/categoria/categoria.module.js';
+import { PersonaModule } from './modules/persona/persona.module.js';
 export const { ObserveModule, ObserveInstrument } = createObserveModule();
 let AppModule = class AppModule {
 };
@@ -27,6 +29,8 @@ AppModule = __decorate([
             UsersModule,
             DatabaseModule,
             ConfigModule,
+            CategoriaModule,
+            PersonaModule,
         ],
         controllers: [AppController],
         providers: [AppService],
